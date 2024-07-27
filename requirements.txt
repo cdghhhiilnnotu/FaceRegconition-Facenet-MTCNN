@@ -1,0 +1,12 @@
+mtcnn==0.1.1
+scikit-learn==1.5.1
+tensorflow==2.17.0
+keras-facenet==0.3.2
+keras==3.4.1
+matplotlib==3.9.1
+opencv-python==4.10.0.84
+
+
+
+
+
