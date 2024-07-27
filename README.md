@@ -6,7 +6,7 @@
   + Each class folder contains image files named img.* (where * can be any number or extension, like .jpg).
 
 - More likes:<br>
-----/dataset\n<br>
+----/dataset<br>
 --------/class1<br>
 ------------img.*<br>
 --------/class2<br>
