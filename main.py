@@ -1,5 +1,5 @@
 from lib import *
-from models import *
+from modules import *
 
 faceloader= FaceLoader('./Hau-Face')
 X, y = faceloader.load_classes()

@@ -160,4 +160,9 @@ cython_debug/
 #.idea/
 
 Hau-Face/
+Hau-Face - Copy/
+Hau-Face-Test/
+data/
+augmentation.py
+
 
