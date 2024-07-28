@@ -1,4 +1,6 @@
 # FACE RECOGNITION REPOSITORY - MODULE RECOGNITION WITH FACENET + MTCNN
+## Test Accuracy: 85-100%
+
 
 - Create dataset path: This section explains how to structure your dataset folder.
   + The main folder is named /dataset.
