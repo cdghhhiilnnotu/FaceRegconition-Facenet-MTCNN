@@ -106,7 +106,6 @@ class FaceAugmentation:
             train_ds = train_ds.shuffle(1000).batch(1).prefetch(tf.data.experimental.AUTOTUNE)
 
             for image, label in train_ds.as_numpy_iterator():
-                print(label.shape)
                 X_train.append(image[0])
                 y_train.append(label[0])
 
