@@ -98,16 +98,17 @@ class FaceAugmentation:
     
     def fit(self, X, y):
         dataset = tf.data.Dataset.from_tensor_slices((X, y))
-        X_train = [x for x in X]
-        y_train = [y_ for y_ in y]
+        X_train = list(X)
+        y_train = list(y)
 
         for i in range(3):
             train_ds = dataset.map(self.augmentating, num_parallel_calls=tf.data.experimental.AUTOTUNE)
             train_ds = train_ds.shuffle(1000).batch(1).prefetch(tf.data.experimental.AUTOTUNE)
 
-            for image, label in dataset.as_numpy_iterator():
-                X_train.append(image)
-                y_train.append(label)
+            for image, label in train_ds.as_numpy_iterator():
+                print(label.shape)
+                X_train.append(image[0])
+                y_train.append(label[0])
 
         X_train = np.array(X_train)
         y_train = np.array(y_train)
